@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Form from "@components/AIForm";
 import toast from "react-hot-toast";
@@ -55,13 +55,15 @@ const EditTool = () => {
     }
   };
   return (
-    <Form
-      type="Update"
-      post={tool}
-      setPost={setTool}
-      submitting={submitting}
-      handleSubmit={editTool}
-    />
+    <Suspense fallback={<p>Loading....</p>}>
+      <Form
+        type="Update"
+        post={tool}
+        setPost={setTool}
+        submitting={submitting}
+        handleSubmit={editTool}
+      />
+    </Suspense>
   );
 };
 

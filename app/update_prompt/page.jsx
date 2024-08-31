@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Form from "@components/PromptForm";
 import toast from "react-hot-toast";
@@ -56,13 +56,15 @@ const EditPrompt = () => {
     }
   };
   return (
-    <Form
-      type="Update"
-      post={post}
-      setPost={setPost}
-      submitting={submitting}
-      handleSubmit={editPrompt}
-    />
+    <Suspense fallback={<p>Loading...</p>}>
+      <Form
+        type="Update"
+        post={post}
+        setPost={setPost}
+        submitting={submitting}
+        handleSubmit={editPrompt}
+      />
+    </Suspense>
   );
 };
 
