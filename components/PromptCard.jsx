@@ -122,7 +122,9 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         </div>
         <div className="flex flex-col text-base justify-end items-end font-semibold gap-1">
           <p className="font-semibold text-base">
-            {formatDistanceToNow(new Date(post.createdAt), { addSuffix: true })}
+            {formatDistanceToNow(new Date(post.createdAt), {
+              addSuffix: false,
+            })}
           </p>
           <div
             className="flex items-start gap-3

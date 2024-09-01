@@ -76,7 +76,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col w-full mx-auto sm:px-20 px-6;
+  @apply relative z-10 flex justify-center items-center flex-col w-full mx-auto sm:px-16 px-2;
 }
 
 .black_btn {
@@ -152,7 +152,7 @@
 
 /* PromptCard Component */
 .prompt_card {
-  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[390px] w-full h-fit;
+  @apply flex-1 break-inside-avoid rounded-lg border border-gray-300 bg-white/20 bg-clip-padding p-6 pb-4 backdrop-blur-lg backdrop-filter md:w-[400px] w-full h-fit;
 }
 
 .flex-center {
