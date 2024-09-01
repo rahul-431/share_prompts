@@ -63,7 +63,11 @@ const ToolCard = ({ post, handleEdit, handleDelete }) => {
           <p className="bg-orange-500 text-white p-1 px-2 rounded-md">Paid</p>
         )}
       </div>
-      <Link href={post.link} className="blue_gradient cursor-pointer text-xl">
+      <Link
+        href={post.link}
+        target="_blank"
+        className="blue_gradient cursor-pointer text-xl"
+      >
         {post.title}
       </Link>
       <p className=" text-gray-700 my-4 text-base">#{post.features}</p>

@@ -3,8 +3,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <div className="w-full flex sm:flex-row flex-col gap-2 justify-between py-2 items-center mt-5 mb-2">
-      <p className="text-lg">@Copyright 2024 All Rights are reserved</p>
-      <p className="text-lg">
+      <p className="text-base text-center">
+        @Copyright 2024 All Rights are reserved
+      </p>
+      <p className="text-base text-center">
         Developed by{" "}
         <Link
           target="_blank"
