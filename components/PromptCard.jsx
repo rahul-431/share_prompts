@@ -79,16 +79,16 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
         </div>
       </div>
       <p className="text-orange-500 mt-2 text-xl font-normal">{post.title}</p>
-      <p className=" text-gray-700 my-4 text-wrap text-lg">{post.prompt}</p>
+      <p className=" text-gray-700 my-4 text-wrap text-base">{post.prompt}</p>
       <p
-        className="blue_gradient cursor-pointer text-lg"
+        className="blue_gradient cursor-pointer text-base"
         onClick={() => handleTagClick && handleTagClick(post.tag)}
       >
         #{post.tag}
       </p>
       {post.tools && (
         <p
-          className="flex gap-2 text-lg"
+          className="flex gap-2 text-base"
           onClick={() => handleTagClick && handleTagClick(post.tools)}
         >
           <span>Tools : </span>
@@ -114,7 +114,7 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
             />
           )}
           <div className="flex flex-col">
-            <h3 className="font-semibold text-gray-900 text-lg">
+            <h3 className="font-semibold text-gray-900 text-base">
               @{post.creator.name}
             </h3>
             <p className=" text-gray-500">{post.creator.email}</p>

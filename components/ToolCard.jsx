@@ -66,7 +66,7 @@ const ToolCard = ({ post, handleEdit, handleDelete }) => {
       <Link href={post.link} className="blue_gradient cursor-pointer text-xl">
         {post.title}
       </Link>
-      <p className=" text-gray-700 my-4 text-lg">#{post.features}</p>
+      <p className=" text-gray-700 my-4 text-base">#{post.features}</p>
 
       <div className="flex justify-between items-center mt-8">
         <div
@@ -87,7 +87,7 @@ const ToolCard = ({ post, handleEdit, handleDelete }) => {
             />
           )}
           <div className="flex flex-col">
-            <h3 className="font-semibold text-gray-900 text-lg">
+            <h3 className="font-semibold text-gray-900 text-base">
               @{post.creator.name}
             </h3>
             <p className=" text-gray-500">{post.creator.email}</p>
