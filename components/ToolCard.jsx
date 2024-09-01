@@ -98,14 +98,14 @@ const ToolCard = ({ post, handleEdit, handleDelete }) => {
           </div>
         </div>
         <div className="flex flex-col text-base justify-end items-end font-semibold gap-1">
-          <p className="font-semibold text-base">
+          <p className="font-semibold text-sm">
             {formatDistanceToNow(new Date(post.createdAt), {
               addSuffix: false,
             })}
           </p>
           <div
-            className="flex items-start gap-3
-           border-2 border-gray-300 px-2 rounded-xl"
+            className="flex items-center justify-between gap-3
+           border-2 border-gray-300 py-1 px-2 rounded-xl"
           >
             <button onClick={handleLike} disabled={liked}>
               <Image
