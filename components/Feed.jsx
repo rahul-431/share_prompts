@@ -35,7 +35,7 @@ const Feed = () => {
       <div className="relative w-full max-w-xl flex-center">
         <input
           type="text"
-          placeholder="Search tag, username or prompts"
+          placeholder="Search here.."
           value={searchText}
           onChange={handleSearchChange}
           className="search_input pee"
