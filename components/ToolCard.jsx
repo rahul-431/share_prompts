@@ -99,7 +99,7 @@ const ToolCard = ({ post, handleEdit, handleDelete }) => {
           </p>
           <div
             className="flex items-start gap-3
-           border-2 border-gray-300 py-1 px-2 rounded-xl"
+           border-2 border-gray-300 px-2 rounded-xl"
           >
             <button onClick={handleLike} disabled={liked}>
               <Image
@@ -107,8 +107,8 @@ const ToolCard = ({ post, handleEdit, handleDelete }) => {
                 src={
                   liked ? "/assets/icons/likea.svg" : "/assets/icons/likeb.svg"
                 }
-                width={22}
-                height={22}
+                width={18}
+                height={18}
               />
             </button>
             <p>{likes?.length}</p>
